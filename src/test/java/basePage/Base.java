@@ -43,7 +43,7 @@ public class Base {
     public void tearDown() {
 
 	driver.close(); // we destroy the driver object after close operation
-	// driver.quit(); // we destroy the driver object after quit operation
+	driver.quit(); // we destroy the driver object after quit operation
     }
 
 }
