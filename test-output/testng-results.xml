@@ -2,12 +2,12 @@
 <testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-21T07:30:27Z" name="Default suite" finished-at="2022-05-21T07:32:27Z" duration-ms="119452">
+  <suite started-at="2022-05-23T12:57:11Z" name="Default suite" finished-at="2022-05-23T12:57:53Z" duration-ms="42570">
     <groups>
     </groups>
-    <test started-at="2022-05-21T07:30:27Z" name="Default test" finished-at="2022-05-21T07:32:27Z" duration-ms="119452">
+    <test started-at="2022-05-23T12:57:11Z" name="Default test" finished-at="2022-05-23T12:57:53Z" duration-ms="42570">
       <class name="webTest.AddUserTest">
-        <test-method signature="init()[pri:0, instance:webTest.AddUserTest@67d18ed7]" started-at="2022-05-21T13:00:27Z" name="init" finished-at="2022-05-21T13:02:27Z" duration-ms="119426" status="FAIL">
+        <test-method signature="init()[pri:0, instance:webTest.AddUserTest@67d18ed7]" started-at="2022-05-23T18:27:11Z" name="init" finished-at="2022-05-23T18:27:53Z" duration-ms="42551" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -15,10 +15,10 @@
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SURAJ', ip: '192.168.216.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ceebf889686c8ba0223792f432bdb53c, clickElement {id=b1a3fcb0-28ee-44de-b13c-474d66f47b49}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Rajat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57144/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ceebf889686c8ba0223792f432bdb53c)] -> xpath: (//a[text()='Flat Owners'])[1]]
-Session ID: ceebf889686c8ba0223792f432bdb53c]]>
+Command: [cc0b70e0b3b3e8ca2f027abe47c74918, clickElement {id=b2ef95d9-e011-40c5-8d23-e02cd4160945}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Rajat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64710}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64710/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cc0b70e0b3b3e8ca2f027abe47c74918)] -> xpath: (//a[text()='Flat Owners'])[1]]
+Session ID: cc0b70e0b3b3e8ca2f027abe47c74918]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -26,10 +26,10 @@ Session ID: ceebf889686c8ba0223792f432bdb53c]]>
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'SURAJ', ip: '192.168.216.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ceebf889686c8ba0223792f432bdb53c, clickElement {id=b1a3fcb0-28ee-44de-b13c-474d66f47b49}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Rajat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57144/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ceebf889686c8ba0223792f432bdb53c)] -> xpath: (//a[text()='Flat Owners'])[1]]
-Session ID: ceebf889686c8ba0223792f432bdb53c
+Command: [cc0b70e0b3b3e8ca2f027abe47c74918, clickElement {id=b2ef95d9-e011-40c5-8d23-e02cd4160945}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Rajat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64710}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64710/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cc0b70e0b3b3e8ca2f027abe47c74918)] -> xpath: (//a[text()='Flat Owners'])[1]]
+Session ID: cc0b70e0b3b3e8ca2f027abe47c74918
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
