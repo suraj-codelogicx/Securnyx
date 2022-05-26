@@ -2,61 +2,37 @@ package webPage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
+
     WebDriver driver;
 
-    public LoginPage(WebDriver driver) {
-	this.driver = driver;
+    public LoginPage(WebDriver ldriver) {
+	this.driver = ldriver;
     }
 
     @FindBy(xpath = "//input[@placeholder='Username']")
-    @CacheLookup
     WebElement Username;
 
-    @FindBy(xpath = "(//input[@type='password'])[2]")
-    @CacheLookup
+    @FindBy(how = How.XPATH, using = "(//input[@type='password'])[2]")
     WebElement Password;
 
-    @FindBy(xpath = "(//*[@name='button'])[2]")
-    @CacheLookup
-    WebElement Loginbutton;
+    @FindBy(how = How.XPATH, using = "(//*[@name='button'])[2]")
+    WebElement Login;
 
-    @FindBy(xpath = "//img[@alt='User Image']")
-    @CacheLookup
-    WebElement Imagebutton;
+    public void login_to_360(String uid, String pas) throws InterruptedException {
 
-    @FindBy(xpath = "//a[normalize-space()='Sign out']")
-    @CacheLookup
-    WebElement Logoutbutton;
-
-    public void setEmail(String strEmail) {
-
-	Username.sendKeys(strEmail);
-    }
-
-    public void setPassword(String strPassword) {
-
-	Password.sendKeys(strPassword);
-    }
-
-    public void clickOnLoginButton() {
-
-	Loginbutton.click();
-
-    }
-
-    public void imageButton() {
-
-	Imagebutton.click();
-
-    }
-
-    public void clickOnsignoutButton() {
-
-	Logoutbutton.click();
+	WebDriverWait wait = (new WebDriverWait(driver, 60));
+	wait.until(ExpectedConditions.visibilityOf(Username));
+	Username.sendKeys(uid);
+	Password.sendKeys(pas);
+	Thread.sleep(3000);
+	Login.click();
+	Thread.sleep(3000);
 
     }
 

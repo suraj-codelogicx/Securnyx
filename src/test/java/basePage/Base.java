@@ -40,10 +40,17 @@ public class Base {
     }
 
     @AfterSuite
-    public void tearDown() {
+    /*
+     * public void tearDown() {
+     * 
+     * // driver.close(); // we destroy the driver object after close operation
+     * driver.quit(); // driver.exit();// we destroy the driver object after quit
+     * operation }
+     */
 
-	driver.close(); // we destroy the driver object after close operation
-	driver.quit(); // we destroy the driver object after quit operation
+    public static void quit() {
+	driver.quit();
+
     }
 
 }
