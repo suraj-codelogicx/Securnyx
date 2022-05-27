@@ -5,11 +5,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class VehicleSetupTest {
 
-}
-
-    }
-
-public void VehicleSetup_test() throws InterruptedException {
+    public void VehicleSetup_test() throws InterruptedException {
 
 	Thread.sleep(7000);
 	Actions actions = new Actions(driver);
@@ -21,4 +17,5 @@ public void VehicleSetup_test() throws InterruptedException {
 	actions.moveToElement(subMenuOption).perform();
 	subMenuOption.click();
 	Thread.sleep(3000);
+    }
 }

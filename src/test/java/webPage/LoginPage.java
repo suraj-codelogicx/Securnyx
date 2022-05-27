@@ -26,6 +26,7 @@ public class LoginPage {
 
     public void login_to_360(String uid, String pas) throws InterruptedException {
 
+	@SuppressWarnings("deprecation")
 	WebDriverWait wait = (new WebDriverWait(driver, 60));
 	wait.until(ExpectedConditions.visibilityOf(Username));
 	Username.sendKeys(uid);

@@ -15,4 +15,5 @@ public class VehicleSetupPage {
 
     @FindBy(xpath = "(//a[@class='dropdown-toggle border-contact-clr sm-arrow3 dropdown-toggle'])[1]")
     WebElement property;
-    @FindBy(xpath =
+    @FindBy(xpath ="()")
+}
