@@ -2,23 +2,23 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-27T07:14:49Z" name="Default suite" finished-at="2022-05-27T07:15:36Z" duration-ms="47188">
+  <suite started-at="2022-05-31T06:14:26Z" name="Default suite" finished-at="2022-05-31T06:16:39Z" duration-ms="132995">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.checkLogin()[pri:0, instance:webTest.LoginTest@6cc558c6]" name="checkLogin" class="webTest.LoginTest"/>
+        <method signature="VehicleSetupTest.VehicleSetup()[pri:0, instance:webTest.VehicleSetupTest@6cc558c6]" name="VehicleSetup" class="webTest.VehicleSetupTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-05-27T07:14:49Z" name="Default test" finished-at="2022-05-27T07:15:36Z" duration-ms="47188">
-      <class name="webTest.LoginTest">
-        <test-method signature="checkLogin()[pri:0, instance:webTest.LoginTest@6cc558c6]" started-at="2022-05-27T12:44:49Z" name="checkLogin" finished-at="2022-05-27T12:45:35Z" duration-ms="46766" status="PASS">
+    <test started-at="2022-05-31T06:14:26Z" name="Default test" finished-at="2022-05-31T06:16:39Z" duration-ms="132995">
+      <class name="webTest.VehicleSetupTest">
+        <test-method signature="VehicleSetup()[pri:0, instance:webTest.VehicleSetupTest@6cc558c6]" started-at="2022-05-31T11:44:26Z" name="VehicleSetup" finished-at="2022-05-31T11:46:38Z" duration-ms="132648" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:webTest.LoginTest@6cc558c6]" started-at="2022-05-27T12:45:35Z" name="teardown" finished-at="2022-05-27T12:45:36Z" duration-ms="408" status="PASS">
+        </test-method> <!-- VehicleSetup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webTest.VehicleSetupTest@6cc558c6]" started-at="2022-05-31T11:46:39Z" name="teardown" finished-at="2022-05-31T11:46:39Z" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- webTest.LoginTest -->
+      </class> <!-- webTest.VehicleSetupTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
