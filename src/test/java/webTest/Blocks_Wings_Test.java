@@ -6,13 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import basePage.Base;
+import webPage.Blocks_Wings_Page;
 import webPage.LoginPage;
-import webPage.VehicleSetupPage;
 
-public class VehicleSetupTest {
+public class Blocks_Wings_Test {
 
     @Test(groups = { "sanity" })
-    public void VehicleSetup() throws InterruptedException {
+    public void BlockTests() throws InterruptedException {
 	// launch browser
 
 	WebDriver driver = Base.startBrowser("chrome", "https://dev.the360.in/login");
@@ -22,22 +22,12 @@ public class VehicleSetupTest {
 	// call the method
 	login_page.login_to_360("surajbiswas@yopmail.com", "suraj8877");
 
-	VehicleSetupPage vehicle_setup_test = PageFactory.initElements(driver, VehicleSetupPage.class);
-
-	vehicle_setup_test.VehicleSetupPageTest();
-	// driver.wait(2000);
-	vehicle_setup_test.VehicleTypeAddTest();
-
-	vehicle_setup_test.VehicleTypeFunctionality();
-
-	vehicle_setup_test.VehicleTypeAddTestWithoutOwner();
-
-	vehicle_setup_test.VehicleTypeResetButton();
+	Blocks_Wings_Page b_page = PageFactory.initElements(driver, Blocks_Wings_Page.class);
+	b_page.BlocksTest();
     }
 
     @AfterMethod(alwaysRun = true)
     public void teardown() {
 	Base.quit();
     }
-
 }
