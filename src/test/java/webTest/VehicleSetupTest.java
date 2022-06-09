@@ -25,7 +25,7 @@ public class VehicleSetupTest {
 	VehicleSetupPage vehicle_setup_test = PageFactory.initElements(driver, VehicleSetupPage.class);
 
 	vehicle_setup_test.VehicleSetupPageTest();
-
+	driver.wait(2000);
 	vehicle_setup_test.VehicleTypeAddTest();
 
 	vehicle_setup_test.VehicleTypeFunctionality();
