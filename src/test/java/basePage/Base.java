@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -39,18 +38,13 @@ public class Base {
 
     }
 
-    @AfterSuite
-    /*
-     * public void tearDown() {
-     * 
-     * // driver.close(); // we destroy the driver object after close operation
-     * driver.quit(); // driver.exit();// we destroy the driver object after quit
-     * operation }
-     */
-
     public static void quit() {
 	driver.quit();
 
     }
+//
+//    public static void close() {
+//	driver.close();
+//    }
 
 }

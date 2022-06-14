@@ -15,7 +15,7 @@ public class VehicleSetupTest {
     public void VehicleSetup() throws InterruptedException {
 	// launch browser
 
-	WebDriver driver = Base.startBrowser("chrome", "https://dev.the360.in/login");
+	WebDriver driver = Base.startBrowser("firefox", "https://dev.the360.in/login");
 
 	// created page object using page factory
 	LoginPage login_page = PageFactory.initElements(driver, LoginPage.class);
@@ -38,6 +38,7 @@ public class VehicleSetupTest {
     @AfterMethod(alwaysRun = true)
     public void teardown() {
 	Base.quit();
+	// Base.close();
     }
 
 }

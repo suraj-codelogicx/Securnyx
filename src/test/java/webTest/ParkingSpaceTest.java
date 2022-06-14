@@ -6,13 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import basePage.Base;
-import webPage.FlatsPage;
 import webPage.LoginPage;
+import webPage.ParkingSpacePage;
 
-public class FlatsTest {
+public class ParkingSpaceTest {
 
-    @Test
-    public void Flats() throws InterruptedException {
+    @Test(groups = { "sanity" })
+    public void ParkingSpace() throws InterruptedException {
 	// launch browser
 
 	WebDriver driver = Base.startBrowser("chrome", "https://dev.the360.in/login");
@@ -22,15 +22,8 @@ public class FlatsTest {
 	// call the method
 	login_page.login_to_360("surajbiswas@yopmail.com", "suraj8877");
 
-	FlatsPage fPage = PageFactory.initElements(driver, FlatsPage.class);
-
-	fPage.flat_test();
-
-	fPage.create_flat_test();
-
-	fPage.search_flat_no_test();
-
-	fPage.edit_flat_and_pagination_test();
+	ParkingSpacePage pspage = PageFactory.initElements(driver, ParkingSpacePage.class);
+	pspage.parkingspace_test();
     }
 
     @AfterMethod(alwaysRun = true)
